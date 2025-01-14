@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script transfers a file to a remote server using scp
+
+# Check if the number of parameters is less than 4
+if [ $# -lt 4 ]; then
+  # If there are less than 4 parameters, print the usage message and exit
+  echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+  exit 1
+fi
+
+# Assign the parameters to variables for easier reference
+FILE_PATH=$1     # Path to the file to transfer
+SERVER_IP=$2     # IP address of the remote server
+USERNAME=$3      # Username to log in as
+SSH_KEY_PATH=$4  # Path to the SSH private key
+
+# Use scp to transfer the file to the remote server's home directory (~)
+scp -i "$SSH_KEY_PATH" -o StrictHostKeyChecking=no "$FILE_PATH" "$USERNAME@$SERVER_IP:~/"
+
