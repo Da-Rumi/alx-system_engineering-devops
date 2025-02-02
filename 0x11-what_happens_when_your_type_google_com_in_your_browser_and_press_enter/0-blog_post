@@ -1,0 +1,31 @@
+When you type “https://www.google.com” into your browser and hit Enter, you start a fast and complicated process behind the scenes. Even though the webpage appears almost instantly, a lot is happening to make it work. Here’s a basic, step-by-step explanation:
+
+Finding the Address (DNS Resolution)
+
+Every website has a special number called an IP address (like 142.250.189.206) that tells your computer where to go. Since remembering numbers is hard, we use names like “google.com” instead.
+Your computer first checks if it already knows the number. If not, it asks your router and your Internet Service Provider (ISP), and if needed, it eventually asks bigger, specialized servers to find the right address. This whole search happens in just milliseconds.
+Setting Up a Connection (TCP Handshake)
+
+Once your computer knows where to go, it needs to make a secure connection. This is done through a “three-way handshake,” which is like a quick introduction between your computer and Google’s server:
+Your computer sends a “hello” (SYN message).
+Google replies with a “hello back” (SYN-ACK).
+Your computer sends a final “okay, let’s chat” (ACK).
+This process makes sure both sides are ready to share information.
+Checking for Safety (Firewalls and Security)
+
+Before any data is shared, your request goes through digital “bouncers” known as firewalls. These check if everything looks safe and only let secure connections (like those using port 443 for HTTPS) through.
+Keeping Things Private (HTTPS and Encryption)
+
+The “S” in HTTPS means “secure.” Your browser and Google’s server perform a secret handshake using encryption. Google shows a digital certificate (like a passport), and your browser checks to make sure it’s legit. Once verified, they agree on a way to scramble the data so that only you and Google can read it.
+Managing the Load (Load Balancers)
+
+Google gets millions of requests every day. To keep everything running smoothly, they use load balancers that act like traffic directors. They decide which server should handle your request to avoid overloading any one server.
+Getting the Content (Web Servers and Application Servers)
+
+Your request first goes to a web server that handles simple tasks like showing images and basic page content.
+For more complicated requests (like running a search), the web server passes the request to an application server. This is where the heavy thinking happens—searching through indexes, filtering results, and figuring out what you need.
+The application server may pull data from large databases that store all the information.
+Bringing It Back (Assembling the Webpage)
+
+Once all the data is collected, it travels back through the same chain—from the database to the application server, then to the web server, and finally back to your browser.
+Your browser then puts all the pieces together (using HTML, CSS, and JavaScript) to display the final webpage on your screen.
