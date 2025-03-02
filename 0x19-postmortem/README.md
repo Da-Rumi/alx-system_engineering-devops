@@ -60,4 +60,4 @@ Run monthly "fire drills" to practice incident response. (Ongoing)
 Lightening the Mood 😅
 Q: Why did the Nginx admin break up with the server?
 A: Because it kept throwing 502s and never listened!
-![image alt] (https://raw.githubusercontent.com/Da-Rumi/alx-system_engineering-devops/refs/heads/master/0x19-postmortem/DALL%C2%B7E%202025-03-03%2001.14.03%20-%20A%20playful%20cartoon-style%20digital%20illustration%20of%20a%20chaotic%20server%20room.%20A%20large%20monitor%20displays%20a%20'502%20Bad%20Gateway'%20error%20message.%20A%20stressed-but-smil.webp)
+![image alt](https://raw.githubusercontent.com/Da-Rumi/alx-system_engineering-devops/refs/heads/master/0x19-postmortem/DALL%C2%B7E%202025-03-03%2001.14.03%20-%20A%20playful%20cartoon-style%20digital%20illustration%20of%20a%20chaotic%20server%20room.%20A%20large%20monitor%20displays%20a%20'502%20Bad%20Gateway'%20error%20message.%20A%20stressed-but-smil.webp)
